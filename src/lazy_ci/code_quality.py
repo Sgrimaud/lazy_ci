@@ -15,7 +15,7 @@ def run_code_quality(tool_timeout=9999):
         [
             "pylint",
             "--ignore-paths",
-            ".*test.*|.git*|venv/*",
+            "'.*test.*|.git*|venv/*'",
             "--recursive",
             "y",
             ".",
